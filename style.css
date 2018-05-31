@@ -1,0 +1,187 @@
+*{
+ height: 100%;
+ width: 100%;
+  
+}
+
+  html, body{
+    background: url("dust.svg"), url("fond.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  .ghost{
+    height: 7%;
+  }
+  .title{
+    height:150px;
+    /* border: 2px solid green; */
+   
+  }
+
+  .title1{
+    height:150px;
+    /* border: 2px solid blue; */
+           
+  }
+
+  .acs{
+    /* border: 2px solid red; */
+    height: 200px;
+  }
+
+  #calque_1{
+    width: 50%;
+    height:50%;
+  }
+
+  .st0{
+    height: 70%;
+    width: 34%;
+  }
+
+  .year{
+    height: 150px;
+    /* border:2px solid yellow; */
+  }
+
+  .rotate-left {
+    -webkit-animation: rotate-left 0.5s 3 cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            animation: rotate-left 0.5s 3 cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            animation-delay: 8s;
+  }
+
+  @-webkit-keyframes rotate-left {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+    }
+  }
+
+  .rotate-right {
+    -webkit-animation: rotate-right 0.5s 3 cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            animation: rotate-right 0.5s 3 cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            animation-delay: 10s;
+  }
+  @-webkit-keyframes rotate-right {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      -webkit-transform-origin: right;
+              transform-origin: right;
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      -webkit-transform-origin: right;
+              transform-origin: right;
+    }
+  }
+  
+  .slide-bck-left {
+    -webkit-animation: slide-bck-left 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation: slide-bck-left 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation-delay: 12s;
+  }
+
+  @-webkit-keyframes slide-bck-left {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-400px) translateX(-200px);
+              transform: translateZ(-400px) translateX(-200px);
+    }
+  }
+  @keyframes slide-bck-left {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-400px) translateX(-200px);
+              transform: translateZ(-400px) translateX(-200px);
+    }
+  }
+  
+  .slide-bck-right {
+    -webkit-animation: slide-bck-right 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation: slide-bck-right 0.45s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation-delay: 12s;
+  }
+
+  @-webkit-keyframes slide-bck-right {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-400px) translateX(200px);
+              transform: translateZ(-400px) translateX(200px);
+    }
+  }
+  @keyframes slide-bck-right {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-400px) translateX(200px);
+              transform: translateZ(-400px) translateX(200px);
+    }
+  }
+  
+  @media screen and (max-width: 780px)
+  {
+    .title text{
+      font-size: 50px;
+    }
+
+    .title1 text{
+      font-size: 50px;
+    }
+
+    .year text{
+      font-size: 50px;
+    }
+
+    .title, .acs{
+      height: 30%;
+    }
+
+    .title1, .year{
+      height: 20%;
+    }
+
+  }
+
+  @media screen and (max-width: 480px)
+  {
+    .title text{
+      font-size: 40px;
+    }
+
+    .title1 text{
+      font-size: 40px;
+    }
+
+    .year text{
+      font-size: 40px;
+    }
+
+    .title, .title1, .acs, .year{
+      height: 20%;
+    }
+
+  }
+  
